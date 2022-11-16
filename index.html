@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <style>
+      body {
+        min-height: 40vw;
+        background-color: #f1f2f9;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: #29335c;
+        color: white;
+        padding: 0.5rem 2rem;
+        align-items: center;
+      }
+      #header p {
+        font-size: 1.3rem;
+      }
+
+      #content {
+        padding: 1rem 2.5rem 2rem;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+      }
+      #content h1 {
+        margin: 1.5rem 0;
+        /* margin-bottom: 1.5rem; */
+      }
+      #answers {
+        width: 40%;
+      }
+
+      .option {
+        padding: 1rem 0.5rem;
+        font-size: 1.2rem;
+        width: 90%;
+        /* margin: auto; */
+        background-color: #9ca7d3;
+        /* border-radius: 5px; */
+        border: 1px solid #808ec6;
+        margin: 0.5rem auto;
+      }
+
+      .option input {
+        margin-right: 1rem;
+      }
+
+      .btn {
+        margin-top: 1rem;
+        padding: 0.5rem 0.8rem;
+        background-color: #aecb90;
+        border: none;
+        font-size: 1.2rem;
+        /* border-radius: 5px; */
+        margin-right: 0.8rem;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .result {
+        width: 65%;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+      }
+
+      .result.green {
+        border: 1px #54a553 solid;
+        background-color: #aed6ae;
+      }
+
+      .result.red {
+        border: 1px #ed1c24 solid;
+        background-color: #f68e91;
+      }
+
+      .result-header {
+        font-size: 1.5rem;
+        padding: 1rem 0 2rem;
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+      .result-header span {
+        margin-right: 0.5rem;
+      }
+
+      .result-answers {
+        font-size: 1.1rem;
+        font-family: "Franklin Gothic Light", "Arial Narrow", Arial, sans-serif;
+        justify-content: space-evenly;
+        padding: 0 0 1rem 0;
+        display: flex;
+      }
+
+      .result-answers div {
+        width: 45%;
+      }
+
+      @media only screen and (max-width: 767px) {
+        #answers{
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h2>JS Quiz</h2>
+      <p id="total">Total Questions:</p>
+    </div>
+    <div id="content">
+      <h1 id="question">
+        <!-- 1. Inside which HTML element do we put the JavaScript? -->
+      </h1>
+      <form id="answers">
+        <!-- <div class="option">
+          <input type="radio" id="1" name="option" value="<script>" />
+          <label for="1">Answer 1</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="2" name="option" value="<scripting>" />
+          <label for="2">Answer 2</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="3" name="option" value="<js>" />
+          <label for="3">Answer 3</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="4" name="option" value="<javascript>" />
+          <label for="4">Answer 4</label>
+        </div> -->
+      </form>
+      <div id="buttons">
+        <button class="btn" id="prev">Prev</button>
+        <button class="btn" id="next">Next</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
