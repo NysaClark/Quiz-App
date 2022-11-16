@@ -39,7 +39,7 @@ let quiz = [
   },
   {
     id: 4,
-    question: "The external JavaScript file must contain the <script> tag.",
+    question: "The external JavaScript file must contain the &lt;script&gt; tag.",
     options: ["True", "False"],
     answer: "False",
   },
